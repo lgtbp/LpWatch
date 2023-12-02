@@ -1,0 +1,43 @@
+menu "Lp Lib configuration"
+
+
+        config LP_USE_MINIZ
+                bool "use miniz lib"
+                default n
+
+
+        menu "fs settings"
+                config LP_USE_FS_STDIO
+                        bool "c file fs(stdio)"
+                        default y
+                config LP_USE_FS_STDIO_LETTER
+                        int "Set an upper cased letter on which the drive will accessible (e.g. 'A' i.e. 67 )"
+                        default 67
+                        depends on LP_USE_FS_STDIO
+
+                config LP_USE_FS_POSIX
+                        bool "c posix fs"
+                        default n
+                config LP_USE_FS_POSIX_LETTER
+                        int "Set an upper cased letter on which the drive will accessible (e.g. 'A' i.e. 67 )"
+                        default 67
+                        depends on LP_USE_FS_POSIX
+
+                config LP_USE_FS_FATFS
+                        bool "c fatfs fs"
+                        default n
+                config LP_USE_FS_FATFS_LETTER
+                        int "Set an upper cased letter on which the drive will accessible (e.g. 'A' i.e. 67 )"
+                        default 67
+                        depends on LP_USE_FS_FATFS
+
+                config LP_USE_FS_LFS
+                        bool "c lfs fs"
+                        default n
+                config LP_USE_FS_LFS_LETTER
+                        int "Set an upper cased letter on which the drive will accessible (e.g. 'A' i.e. 67 )"
+                        default 67
+                        depends on LP_USE_FS_LFS
+        endmenu    
+
+endmenu

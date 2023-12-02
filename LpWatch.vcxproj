@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="components\cJSON\cJSON.c" />
+    <ClCompile Include="components\lplib\lplib.c" />
+    <ClCompile Include="components\miniz_300\miniz_300.c" />
+    <ClCompile Include="components\minmea_030\minmea.c" />
+    <ClCompile Include="components\sdl2\sdlmain.c" />
+    <ClCompile Include="main\lvgl_clock_page.c" />
+    <ClCompile Include="main\lvgl_dispaly_set_page.c" />
+    <ClCompile Include="main\lvgl_file_explorer_page.c" />
+    <ClCompile Include="main\lvgl_general_page.c" />
+    <ClCompile Include="main\lvgl_map_page.c" />
+    <ClCompile Include="main\lvgl_setting_page.c" />
+    <ClCompile Include="main\lvgl_test_page.c" />
+    <ClCompile Include="main\lvgl_wifi_detail_page.c" />
+    <ClCompile Include="main\lvgl_write_sn_page.c" />
+    <ClCompile Include="main\main.c" />
+    <ClCompile Include="main\resource\lvgl_img.c" />
+    <ClCompile Include="main\resource\lvgl_img_gps_compass.c" />
+    <ClCompile Include="main\resource\lvgl_img_hand.c" />
+    <ClCompile Include="main\resource\lvgl_img_hand_hour.c" />
+    <ClCompile Include="main\resource\lvgl_img_hand_min.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="components\cJSON\cJSON.h" />
+    <ClInclude Include="components\lplib\lplib.h" />
+    <ClInclude Include="components\minmea_030\minmea.h" />
+    <ClInclude Include="components\sdl2\lvgl_helpers.h" />
+    <ClInclude Include="components\sdl2\lv_conf.h" />
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\begin_code.h" />
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\close_code.h" />
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL.h" />
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_assert.h" />
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_atomic.h" />
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_audio.h" />
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_bits.h" />
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_blendmode.h" />
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_clipboard.h" />
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_config.h" />
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_config_android.h" />
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_config_iphoneos.h" />
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_config_macosx.h" />
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_config_minimal.h" />
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_config_pandora.h" />
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_config_psp.h" />
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_config_windows.h" />
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_config_winrt.h" />
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_config_wiz.h" />
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_copying.h" />
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_cpuinfo.h" />
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_egl.h" />
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_endian.h" />
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_error.h" />
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_events.h" />
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_filesystem.h" />
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_gamecontroller.h" />
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_gesture.h" />
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_guid.h" />
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_haptic.h" />
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_hidapi.h" />
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_hints.h" />
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_joystick.h" />
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_keyboard.h" />
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_keycode.h" />
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_loadso.h" />
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_locale.h" />
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_log.h" />
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_main.h" />
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_messagebox.h" />
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_metal.h" />
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_misc.h" />
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_mouse.h" />
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_mutex.h" />
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_name.h" />
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_opengl.h" />
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_opengles.h" />
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_opengles2.h" />
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_opengles2_gl2.h" />
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_opengles2_gl2ext.h" />
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_opengles2_gl2platform.h" />
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_opengles2_khrplatform.h" />
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_opengl_glext.h" />
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_pixels.h" />
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_platform.h" />
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_power.h" />
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_quit.h" />
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_rect.h" />
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_render.h" />
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_revision.h" />
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_rwops.h" />
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_scancode.h" />
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_sensor.h" />
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_shape.h" />
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_stdinc.h" />
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_surface.h" />
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_system.h" />
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_syswm.h" />
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_test.h" />
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_test_assert.h" />
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_test_common.h" />
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_test_compare.h" />
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_test_crc32.h" />
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_test_font.h" />
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_test_fuzzer.h" />
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_test_harness.h" />
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_test_images.h" />
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_test_log.h" />
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_test_md5.h" />
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_test_memory.h" />
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_test_random.h" />
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_thread.h" />
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_timer.h" />
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_touch.h" />
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_types.h" />
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_version.h" />
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_video.h" />
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_vulkan.h" />
+    <ClInclude Include="main\lvgl_inc.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{5be73d2b-a770-44d6-80a3-de89d1eec2e0}</ProjectGuid>
+    <RootNamespace>LpWatch</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LibraryPath>$(SolutionDir)\components\mbedtls;$(SolutionDir)\components\lvgl_839;$(SolutionDir)\components\lpverify;$(SolutionDir)\components\sdl2;$(SolutionDir)\components\sdl2\Sdl2Lib\SDL2Vc\lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_TCHAR_DEFINED;LV_CONF_INCLUDE_SIMPLE;_CRT_SECURE_NO_WARNINGS;_VC;_WINDOW;LV_LVGL_H_INCLUDE_SIMPLE;CONFIG_LP_USE_MINIZ;CONFIG_LP_USE_FS_WIN32_EXE_PATH;CONFIG_LP_USE_FS_WIN32_LETTER='D';%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)\components\mbedtls\library;$(SolutionDir)\components\mbedtls\include;$(SolutionDir)\components\cJSON;$(SolutionDir)\components\minmea_030;$(SolutionDir)\components\lpverify;$(SolutionDir)\components\lvgl_839;$(SolutionDir)\components\miniz_300;$(SolutionDir)\components\lpbsp;$(SolutionDir)\main;$(SolutionDir)\components\lplib;$(SolutionDir)\components\sdl2;$(SolutionDir)\components\sdl2\Sdl2Lib\SDL2Vc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/utf-8</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>SDL2main.lib;SDL2.lib;ws2_32.lib;sdl2lpbsp.lib;Bcrypt.lib;lpverify.lib;mbedtls.lib;lvgl.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

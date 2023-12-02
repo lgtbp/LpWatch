@@ -1,0 +1,363 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="components\lplib\lplib.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="components\minmea_030\minmea.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="main\resource\lvgl_img.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="main\resource\lvgl_img_hand.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="main\resource\lvgl_img_hand_hour.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="main\resource\lvgl_img_hand_min.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="main\lvgl_clock_page.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="main\lvgl_map_page.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="main\lvgl_test_page.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="main\lvgl_wifi_detail_page.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="main\main.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="components\sdl2\sdlmain.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="main\lvgl_file_explorer_page.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="components\miniz_300\miniz_300.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="main\lvgl_setting_page.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="main\lvgl_general_page.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="main\lvgl_write_sn_page.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="main\resource\lvgl_img_gps_compass.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="main\lvgl_dispaly_set_page.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="components\cJSON\cJSON.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="components\lplib\lplib.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="components\minmea_030\minmea.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\begin_code.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\close_code.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_assert.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_atomic.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_audio.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_bits.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_blendmode.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_clipboard.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_config.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_config_android.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_config_iphoneos.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_config_macosx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_config_minimal.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_config_pandora.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_config_psp.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_config_windows.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_config_winrt.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_config_wiz.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_copying.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_cpuinfo.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_egl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_endian.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_error.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_events.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_filesystem.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_gamecontroller.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_gesture.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_guid.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_haptic.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_hidapi.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_hints.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_joystick.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_keyboard.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_keycode.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_loadso.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_locale.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_log.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_main.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_messagebox.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_metal.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_misc.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_mouse.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_mutex.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_name.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_opengl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_opengl_glext.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_opengles.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_opengles2.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_opengles2_gl2.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_opengles2_gl2ext.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_opengles2_gl2platform.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_opengles2_khrplatform.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_pixels.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_platform.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_power.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_quit.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_rect.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_render.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_revision.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_rwops.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_scancode.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_sensor.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_shape.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_stdinc.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_surface.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_system.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_syswm.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_test.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_test_assert.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_test_common.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_test_compare.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_test_crc32.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_test_font.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_test_fuzzer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_test_harness.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_test_images.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_test_log.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_test_md5.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_test_memory.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_test_random.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_thread.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_timer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_touch.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_types.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_version.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_video.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="components\sdl2\Sdl2Lib\SDL2Vc\include\SDL_vulkan.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="components\sdl2\lv_conf.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="main\lvgl_inc.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="components\sdl2\lvgl_helpers.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="components\cJSON\cJSON.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
