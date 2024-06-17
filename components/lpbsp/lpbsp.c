@@ -748,7 +748,7 @@ static void lpbsp_wifi_config_init(void)
     ESP_ERROR_CHECK(esp_wifi_set_mode(WIFI_MODE_STA));
     ESP_ERROR_CHECK(esp_wifi_start());
 
-    esp_wifi_set_ps(WIFI_PS_MIN_MODEM);
+    esp_wifi_set_ps(WIFI_PS_MAX_MODEM);
 }
 int lpbsp_wifi_init(int mode)
 {
@@ -1030,7 +1030,6 @@ int lpbsp_iic_read_bytes(int num, uint8_t *data, int addr_size, int size)
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 static spi_device_handle_t tft_spi;
 static uint16_t *tft_buf;
-static uint32_t *tft_buf32;
 
 static void lcd_cmd(const uint8_t cmd)
 {
@@ -1134,7 +1133,6 @@ int tft_spiss_init(void)
         BSP_LOG("malloc error\r\n");
         return 1;
     }
-    tft_buf32 = (uint32_t *)tft_buf;
     return 0;
 }
 static const uint8_t st7789_init_cmds[] = {
@@ -1250,7 +1248,14 @@ int IRAM_ATTR lpbsp_disp_axis(int x1, int y1, int x2, int y2, int p_num, unsigne
     {
         spi_device_queue_trans(tft_spi, &trans[x], portMAX_DELAY);
     }
+#if 1 // lvgl: 1 839 , 0 910
     memcpy(tft_buf, color_p, p_num << 1);
+#else
+    for (x = 0; x < p_num; x++)
+    {
+        tft_buf[x] = (color_p[x] >> 8) | ((color_p[x] & 0xff) << 8);
+    }
+#endif
     trans[5].length = p_num << 4; // Data length, in bits
     trans[5].tx_buffer = tft_buf; // finally send the line data
     spi_device_queue_trans(tft_spi, &trans[5], portMAX_DELAY);

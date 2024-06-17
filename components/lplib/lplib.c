@@ -3141,7 +3141,8 @@ int lp_filelist_printf(char *panme)
 int lp_log(lp_file_t *fd, const char *fmt, ...)
 {
     va_list paramList;
-    char tbuf[64], tlen;
+    char tbuf[64];
+    int tlen;
     if (0 == fd)
         return -9;
     va_start(paramList, fmt);
@@ -4995,7 +4996,7 @@ int lpbsp_socket_read_http_timeout(int fd, uint8_t *buf, int nbytes, int timeout
 uint8_t *lpbsp_socket_read_http(int fd, uint8_t *buf, uint32_t *inout, uint32_t *read_len_out)
 {
     int len = 0, num = 0, read_len = 0, ret = 0, nbytes = 0;
-    char *tbuf = 0, temp[32];
+    char *tbuf = 0;
     int timeout_ms = 5000;
 
     nbytes = *inout;
@@ -5039,7 +5040,7 @@ uint8_t *lpbsp_socket_read_http(int fd, uint8_t *buf, uint32_t *inout, uint32_t 
 获取指定的webapi的boby数据 (少于4K)
 baby_data:没有就发null
 */
-#define NET_DAWN_FILE_BUF_LEN 1024 * 20
+#define NET_DAWN_FILE_BUF_LEN 1024 * 4
 
 #define NET_DAWN_RECV_BUF_LEN (NET_DAWN_FILE_BUF_LEN + 512)
 #define NET_DAWN_FILE_BUF_LEN_B (NET_DAWN_FILE_BUF_LEN - 1)
@@ -5136,8 +5137,9 @@ int lp_http_file_down(char *url, char *file_name, void (*prog_cb)(uint32_t prog,
         if (err)
             break;
 
+        lpbsp_delayms(50); // do not del
         ret = lp_write(tbuf, 1, data_len, fd);
-        lpbsp_delayms(100);
+        lpbsp_delayms(50); // do not del
         if (ret != data_len)
         {
             LP_LOGW("lp_write error %d  %d\r\n", data_len, ret);
@@ -5276,7 +5278,7 @@ int lp_http_file_up(char *url, char *file_name, void (*prog_cb)(uint32_t prog, u
     int sock_num = 0, err = 0, ret = 0;
     const char *request = "PUT %s HTTP/1.1\r\nHost:%s:%d\r\nContent-Type: text/plain\r\nContent-Length:%d\r\n\r\n";
     char web_api[64] = {0}, *send_temp = 0; //
-    char *recv_buf, ip[20], temp[32];
+    char *recv_buf, ip[20];
     uint32_t ip_port, now_size = 0, file_len = 0;
 
     if (url == 0 || file_name == 0)
@@ -5430,7 +5432,7 @@ int lp_pasteboard_clear(void)
 /// @param s2 待相加字符
 char *lp_string_add_string(char *s1, char *s2)
 {
-    int len = 0, len2, i = 0;
+    int len = 0, i = 0;
 
     if (*s2 == '\0')
         return ((char *)s1);
